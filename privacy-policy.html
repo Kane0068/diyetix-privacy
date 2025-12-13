@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Diyetix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .app-name {
+            color: #764ba2;
+            font-weight: bold;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background: #667eea;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        .lang-btn.active {
+            background: #764ba2;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <span class="lang-btn active" onclick="switchLang('tr')">Türkçe</span>
+            <span class="lang-btn" onclick="switchLang('en')">English</span>
+        </div>
+
+        <!-- TÜRKÇE İÇERİK -->
+        <div id="tr-content" class="content active">
+            <h1>Gizlilik Politikası</h1>
+            <p class="last-updated">Son Güncelleme: 13 Aralık 2025</p>
+
+            <p><span class="app-name">Diyetix</span> uygulaması olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken kişisel bilgilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p>
+
+            <h2>1. Toplanan Bilgiler</h2>
+
+            <h3>1.1 Kullanıcı Tarafından Sağlanan Bilgiler</h3>
+            <ul>
+                <li><strong>Hesap Bilgileri:</strong> İsim, e-posta adresi, profil fotoğrafı</li>
+                <li><strong>Sağlık Profili:</strong> Yaş, cinsiyet, kilo, boy, sağlık hedefleri</li>
+                <li><strong>Besin Verileri:</strong> Tüketilen besinler, öğün kayıtları, kalori bilgileri</li>
+                <li><strong>Fotoğraflar:</strong> Kamera izni ile çekilen besin fotoğrafları</li>
+            </ul>
+
+            <h3>1.2 Otomatik Toplanan Bilgiler</h3>
+            <ul>
+                <li><strong>Kullanım Verileri:</strong> Uygulama kullanım istatistikleri</li>
+                <li><strong>Cihaz Bilgileri:</strong> İşletim sistemi, cihaz modeli, uygulama versiyonu</li>
+                <li><strong>Bildirim Token'ları:</strong> Push notification göndermek için Firebase Cloud Messaging token'ı</li>
+            </ul>
+
+            <h2>2. Bilgilerin Kullanım Amaçları</h2>
+            <ul>
+                <li>Kişiselleştirilmiş sağlık önerileri sunmak</li>
+                <li>Besin takibi ve kalori hesaplamaları yapmak</li>
+                <li>Sosyal özellikler sağlamak (arkadaşlarla etkileşim)</li>
+                <li>Bildirimleri göndermek (günlük hatırlatmalar)</li>
+                <li>Uygulamayı geliştirmek ve hataları düzeltmek</li>
+            </ul>
+
+            <h2>3. İzin Gerektiren Özellikler</h2>
+
+            <h3>3.1 Kamera İzni</h3>
+            <p>Besinlerinizin fotoğraflarını çekmeniz için gereklidir. Fotoğraflar yalnızca sizin tarafınızdan görülebilir ve Firebase Storage'da güvenli şekilde saklanır.</p>
+
+            <h3>3.2 Depolama İzni</h3>
+            <p>Çekilen fotoğrafların geçici olarak saklanması için kullanılır.</p>
+
+            <h3>3.3 Bildirim İzni</h3>
+            <p>Size günlük hatırlatmalar ve kişiselleştirilmiş bildirimler göndermek için kullanılır.</p>
+
+            <h3>3.4 İnternet İzni</h3>
+            <p>Firebase servisleri ile iletişim kurmak, verilerinizi senkronize etmek için gereklidir.</p>
+
+            <h2>4. Veri Güvenliği</h2>
+            <p>Verileriniz aşağıdaki önlemlerle korunmaktadır:</p>
+            <ul>
+                <li><strong>Firebase Authentication:</strong> Güvenli kullanıcı kimlik doğrulama</li>
+                <li><strong>Firebase Firestore:</strong> Şifreli veri tabanı</li>
+                <li><strong>Firebase Storage:</strong> Güvenli dosya depolama</li>
+                <li><strong>SSL/TLS:</strong> Tüm veri aktarımları şifrelenir</li>
+                <li><strong>Erişim Kontrolleri:</strong> Verilerinize yalnızca siz erişebilirsiniz</li>
+            </ul>
+
+            <h2>5. Veri Paylaşımı</h2>
+            <p>Kişisel verileriniz <strong>hiçbir şekilde üçüncü taraflarla paylaşılmaz veya satılmaz</strong>.</p>
+
+            <p>Verileriniz yalnızca şu durumlarda işlenir:</p>
+            <ul>
+                <li>Firebase servisleri üzerinden güvenli depolama</li>
+                <li>Yasal zorunluluk gerektiren durumlar</li>
+            </ul>
+
+            <h2>6. Sosyal Özellikler</h2>
+            <p>Arkadaş ekleyip sosyal özelliklerden yararlanabilirsiniz. Bu durumda:</p>
+            <ul>
+                <li>Profil bilgileriniz (isim, fotoğraf) arkadaşlarınız tarafından görülebilir</li>
+                <li>Paylaştığınız gönderiler, beğeniler ve yorumlar arkadaşlarınıza görünür</li>
+                <li>Sosyal etkileşimlerinizi istediğiniz zaman durdurabilirsiniz</li>
+            </ul>
+
+            <h2>7. Kullanıcı Hakları</h2>
+            <p>Verileriniz üzerinde tam kontrole sahipsiniz:</p>
+            <ul>
+                <li><strong>Erişim Hakkı:</strong> Verilerinizin kopyasını talep edebilirsiniz</li>
+                <li><strong>Düzeltme Hakkı:</strong> Yanlış bilgileri düzeltebilirsiniz</li>
+                <li><strong>Silme Hakkı:</strong> Hesabınızı ve tüm verilerinizi silebilirsiniz</li>
+                <li><strong>Veri Taşınabilirliği:</strong> Verilerinizi indirebilirsiniz</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Hesabınızı Silme:</strong> Uygulama ayarlarından "Hesabı Sil" seçeneği ile tüm verileriniz kalıcı olarak silinir.
+            </div>
+
+            <h2>8. Çocukların Gizliliği</h2>
+            <p>Uygulamamız 13 yaş altı çocuklara yönelik değildir. 13 yaş altı kullanıcılardan bilerek veri toplamıyoruz.</p>
+
+            <h2>9. Çerezler ve İzleme</h2>
+            <p>Uygulama, kullanıcı deneyimini iyileştirmek için Firebase Analytics kullanır. Bu tamamen anonim verilerdir ve kişisel kimliğinizle ilişkilendirilemez.</p>
+
+            <h2>10. Değişiklikler</h2>
+            <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler olduğunda uygulama içinde bildirim yapılacaktır.</p>
+
+            <h2>11. Google Play Servisleri</h2>
+            <p>Uygulamamız Google OAuth ile giriş yapma seçeneği sunar. Google ile giriş yaptığınızda, Google'ın <a href="https://policies.google.com/privacy" target="_blank">Gizlilik Politikası</a> geçerli olur.</p>
+
+            <div class="contact">
+                <h2>12. İletişim</h2>
+                <p>Gizlilik politikamız hakkında sorularınız varsa bizimle iletişime geçebilirsiniz:</p>
+                <ul>
+                    <li><strong>E-posta:</strong> <a href="mailto:support@diyetix.com">support@diyetix.com</a></li>
+                    <li><strong>Uygulama:</strong> Diyetix - Kişisel Sağlık Koçunuz</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="en-content" class="content">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: December 13, 2025</p>
+
+            <p>As <span class="app-name">Diyetix</span> application, we value your privacy. This privacy policy explains how your personal information is collected, used, and protected while using the application.</p>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Name, email address, profile photo</li>
+                <li><strong>Health Profile:</strong> Age, gender, weight, height, health goals</li>
+                <li><strong>Nutrition Data:</strong> Consumed foods, meal records, calorie information</li>
+                <li><strong>Photos:</strong> Food photos taken with camera permission</li>
+            </ul>
+
+            <h3>1.2 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Usage Data:</strong> App usage statistics</li>
+                <li><strong>Device Information:</strong> Operating system, device model, app version</li>
+                <li><strong>Notification Tokens:</strong> Firebase Cloud Messaging token for push notifications</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>Provide personalized health recommendations</li>
+                <li>Track nutrition and calculate calories</li>
+                <li>Enable social features (interaction with friends)</li>
+                <li>Send notifications (daily reminders)</li>
+                <li>Improve the app and fix bugs</li>
+            </ul>
+
+            <h2>3. Permission Requirements</h2>
+
+            <h3>3.1 Camera Permission</h3>
+            <p>Required to take photos of your meals. Photos are only visible to you and securely stored in Firebase Storage.</p>
+
+            <h3>3.2 Storage Permission</h3>
+            <p>Used for temporary storage of captured photos.</p>
+
+            <h3>3.3 Notification Permission</h3>
+            <p>Used to send daily reminders and personalized notifications.</p>
+
+            <h3>3.4 Internet Permission</h3>
+            <p>Required to communicate with Firebase services and synchronize your data.</p>
+
+            <h2>4. Data Security</h2>
+            <p>Your data is protected with the following measures:</p>
+            <ul>
+                <li><strong>Firebase Authentication:</strong> Secure user authentication</li>
+                <li><strong>Firebase Firestore:</strong> Encrypted database</li>
+                <li><strong>Firebase Storage:</strong> Secure file storage</li>
+                <li><strong>SSL/TLS:</strong> All data transfers are encrypted</li>
+                <li><strong>Access Controls:</strong> Only you can access your data</li>
+            </ul>
+
+            <h2>5. Data Sharing</h2>
+            <p>Your personal data is <strong>never shared or sold to third parties</strong>.</p>
+
+            <p>Your data is only processed in the following cases:</p>
+            <ul>
+                <li>Secure storage via Firebase services</li>
+                <li>Legal requirements</li>
+            </ul>
+
+            <h2>6. Social Features</h2>
+            <p>You can add friends and use social features. In this case:</p>
+            <ul>
+                <li>Your profile information (name, photo) will be visible to your friends</li>
+                <li>Posts, likes, and comments you share will be visible to your friends</li>
+                <li>You can stop social interactions at any time</li>
+            </ul>
+
+            <h2>7. Your Rights</h2>
+            <p>You have full control over your data:</p>
+            <ul>
+                <li><strong>Access Right:</strong> You can request a copy of your data</li>
+                <li><strong>Correction Right:</strong> You can correct incorrect information</li>
+                <li><strong>Deletion Right:</strong> You can delete your account and all data</li>
+                <li><strong>Data Portability:</strong> You can download your data</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Account Deletion:</strong> You can permanently delete all your data using the "Delete Account" option in app settings.
+            </div>
+
+            <h2>8. Children's Privacy</h2>
+            <p>Our app is not intended for children under 13. We do not knowingly collect data from users under 13.</p>
+
+            <h2>9. Cookies and Tracking</h2>
+            <p>The app uses Firebase Analytics to improve user experience. This is completely anonymous data and cannot be linked to your personal identity.</p>
+
+            <h2>10. Changes</h2>
+            <p>This privacy policy may be updated from time to time. You will be notified in-app when significant changes occur.</p>
+
+            <h2>11. Google Play Services</h2>
+            <p>Our app offers Google OAuth sign-in option. When you sign in with Google, Google's <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> applies.</p>
+
+            <div class="contact">
+                <h2>12. Contact Us</h2>
+                <p>If you have questions about our privacy policy, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:support@diyetix.com">support@diyetix.com</a></li>
+                    <li><strong>App:</strong> Diyetix - Your Personal Health Coach</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+
+            // Show selected content
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
