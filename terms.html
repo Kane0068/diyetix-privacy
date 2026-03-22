@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanım Koşulları - Diyetix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .app-name {
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .alert {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-left: 4px solid #f5c6cb;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background: #667eea;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: #764ba2;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <span class="lang-btn active" onclick="switchLang('tr')">Türkçe</span>
+            <span class="lang-btn" onclick="switchLang('en')">English</span>
+        </div>
+
+        <!-- TÜRKÇE İÇERİK -->
+        <div id="tr-content" class="content active">
+            <h1>Kullanım Koşulları</h1>
+            <p class="last-updated">Son Güncelleme: 13 Aralık 2025</p>
+
+            <p><span class="app-name">Diyetix</span> uygulamasına hoş geldiniz. Uygulamamızı indirerek, erişerek veya
+                kullanarak bu Kullanım Koşullarını kabul etmiş olursunuz. Lütfen bu koşulları dikkatlice okuyun.</p>
+
+            <div class="alert">
+                <strong>Tıbbi Feragatname:</strong> Diyetix bir sağlık veya tıbbi tavsiye platformu değildir. Uygulamada
+                yer alan bilgiler ve özellikler (kalori takibi, sağlık hedefleri, vb.) yalnızca genel bilgilendirme ve
+                kişisel takip amaçlıdır. Herhangi bir diyete, egzersiz programına başlamadan veya sağlık durumunuzla
+                ilgili kararlar almadan önce <strong>mutlaka doktorunuza veya yetkili bir sağlık uzmanına
+                    danışmalısınız.</strong>
+            </div>
+
+            <h2>1. Hesabınız</h2>
+            <p>Uygulamanın bazı özelliklerini kullanmak için bir hesap oluşturmanız gerekir. Hesabınızın güvenliğini
+                sağlamak ve şifrenizi gizli tutmaktan siz sorumlusunuz. Hesabınız üzerinden gerçekleştirilen tüm
+                faaliyetler sizin sorumluluğunuzdadır.</p>
+
+            <h2>2. Kullanıcı Tarafından Oluşturulan İçerik (UGC)</h2>
+            <p>Diyetix, kullanıcıların fotoğraf, yorum ve diğer içerikleri paylaşabileceği sosyal özellikler içerir. Bu
+                içeriklerin paylaşımı aşağıdaki kurallara tabidir:</p>
+            <ul>
+                <li><strong>Sıfır Tolerans:</strong> Şiddet, nefret söylemi, ayrımcılık, cinsel içerik, taciz veya yasa
+                    dışı faaliyetleri teşvik eden içerikler ("Sakıncalı İçerik") kesinlikle yasaktır.</li>
+                <li><strong>Sorumluluk:</strong> Uygulama üzerinden paylaştığınız her türlü içeriğin sorumluluğu tamamen
+                    size aittir.</li>
+                <li><strong>Raporlama ve Engelleme:</strong> Kullanıcılar, rahatsız edici içerikleri veya kullanıcıları
+                    uygulama içindeki "Bildir" (Report) veya "Engelle" (Block) özelliklerini kullanarak anında
+                    işaretleyebilirler.</li>
+                <li><strong>İçerik Denetimi:</strong> Diyetix ekibi, bildirilen içerikleri 24 saat içinde inceleyecek ve
+                    kullanım koşullarını ihlal eden içerikleri derhal kaldırıp, ilgili kullanıcının hesabını askıya alma
+                    veya kalıcı olarak kapatma hakkını saklı tutar. İstismar edici kullanıcılara tolerans gösterilmez.
+                </li>
+            </ul>
+
+            <h2>3. Kabul Edilebilir Kullanım</h2>
+            <p>Uygulamamızı kullanırken şunları YAPAMAZSINIZ:</p>
+            <ul>
+                <li>Uygulamayı yasa dışı veya hileli bir amaç için kullanmak.</li>
+                <li>Diğer kullanıcılara spam, istenmeyen mesaj göndermek veya taciz etmek.</li>
+                <li>Sistemin güvenliğini veya bütünlüğünü tehlikeye atacak girişimlerde bulunmak (tersine mühendislik,
+                    virüs yayma vb.).</li>
+                <li>Uygulamanın ve diğer kullanıcıların fikri mülkiyet haklarını ihlal etmek.</li>
+            </ul>
+
+            <h2>4. Fikri Mülkiyet Hakları</h2>
+            <p>Diyetix uygulamasında bulunan tüm özellikler, logolar, tasarımlar, grafikler ve yazılımlar bize aittir ve
+                telif hakkı ile korunmaktadır. Önceden yazılı izin almadan bunları kopyalayamaz, değiştiremez veya
+                dağıtamazsınız.</p>
+
+            <h2>5. Hizmetin Değiştirilmesi veya Sonlandırılması</h2>
+            <p>Diyetix, uygulamada önceden haber vermeksizin değişiklik yapma, geçici olarak durdurma veya hizmeti
+                tamamen sonlandırma hakkını saklı tutar. Hesabınızın bu ve benzeri kuralları ihlal etmesi durumunda,
+                erişiminiz kalıcı olarak sonlandırılabilir.</p>
+
+            <h2>6. Sorumluluğun Sınırlandırılması</h2>
+            <p>Diyetix uygulaması "olduğu gibi" ve "mevcut olduğu şekilde" sunulmaktadır. Kesintisiz veya hatasız
+                olacağını garanti etmeyiz. Uygulamanın kullanılması veya kullanılamaması sonucunda doğabilecek doğrudan,
+                dolaylı veya tesadüfi zararlardan yasaların izin verdiği ölçüde sorumlu değiliz.</p>
+
+            <h2>7. Değişiklikler</h2>
+            <p>Bu kullanım koşullarını dilediğimiz zaman değiştirme hakkımız saklıdır. Önemli güncellemeler olduğunda
+                uygulama üzerinden bilgilendirileceksiniz.</p>
+
+            <div class="contact">
+                <h2>8. İletişim</h2>
+                <p>Kullanım koşulları ve kurallarla ilgili her türlü sorunuz veya sakıncalı içerik bildirimi için lütfen
+                    bize ulaşın:</p>
+                <ul>
+                    <li><strong>E-posta:</strong> <a href="mailto:support@diyetix.com">support@diyetix.com</a></li>
+                    <li><strong>Uygulama:</strong> Diyetix - Kişisel Sağlık Koçunuz</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="en-content" class="content">
+            <h1>Terms of Use</h1>
+            <p class="last-updated">Last Updated: December 13, 2025</p>
+
+            <p>Welcome to the <span class="app-name">Diyetix</span> application. By downloading, accessing, or using our
+                app, you agree to be bound by these Terms of Use. Please read them carefully.</p>
+
+            <div class="alert">
+                <strong>Medical Disclaimer:</strong> Diyetix is not a healthcare or medical advice platform. The
+                information and features provided within the app (such as calorie tracking, health goals, etc.) are for
+                general informational and personal tracking purposes only. You must <strong>always consult with a doctor
+                    or qualified healthcare professional</strong> before starting any diet, or exercise program, or
+                making decisions regarding your health.
+            </div>
+
+            <h2>1. Your Account</h2>
+            <p>To use certain features of the app, you may need to create an account. You are responsible for
+                safeguarding your password and securing your account. You take full responsibility for any actions taken
+                under your account.</p>
+
+            <h2>2. User Generated Content (UGC)</h2>
+            <p>Diyetix includes social features that allow users to share photos, comments, and other content. The
+                sharing of such content is subject to the following rules:</p>
+            <ul>
+                <li><strong>Zero Tolerance:</strong> Content that promotes violence, hate speech, discrimination,
+                    explicit sexual materials, harassment, or illegal activities ("Objectionable Content") is strictly
+                    prohibited.</li>
+                <li><strong>Responsibility:</strong> You are solely responsible for any content you post or share
+                    through the application.</li>
+                <li><strong>Reporting and Blocking:</strong> Users can immediately flag objectionable content or abusive
+                    users using the in-app "Report" or "Block" features.</li>
+                <li><strong>Content Moderation:</strong> The Diyetix team will review reported content within 24 hours.
+                    We reserve the right to remove any content that violates these terms and to suspend or permanently
+                    ban the accounts of offending users. There is zero tolerance for abusive users.</li>
+            </ul>
+
+            <h2>3. Acceptable Use</h2>
+            <p>While using our app, you must NOT:</p>
+            <ul>
+                <li>Use the app for any illegal, unauthorized, or fraudulent purpose.</li>
+                <li>Spam, send unsolicited messages, or harass other users.</li>
+                <li>Attempt to compromise the security or integrity of the system (e.g., reverse engineering, spreading
+                    viruses).</li>
+                <li>Infringe upon the intellectual property rights of the app or other users.</li>
+            </ul>
+
+            <h2>4. Intellectual Property Rights</h2>
+            <p>All features, logos, designs, graphics, and software found in the Diyetix application are owned by us and
+                protected by copyright laws. You may not copy, modify, or distribute them without prior written
+                permission.</p>
+
+            <h2>5. Modification or Termination of Service</h2>
+            <p>Diyetix reserves the right to modify, temporarily suspend, or permanently terminate the service without
+                prior notice. If your account violates these and other rules, your access may be permanently terminated.
+            </p>
+
+            <h2>6. Limitation of Liability</h2>
+            <p>The Diyetix app is provided on an "as is" and "as available" basis. We do not guarantee that it will be
+                uninterrupted or error-free. To the extent permitted by law, we are not liable for any direct, indirect,
+                or incidental damages resulting from the use or inability to use the app.</p>
+
+            <h2>7. Changes to Terms</h2>
+            <p>We reserve the right to change these terms of use at any time. You will be notified via the app when
+                significant updates occur.</p>
+
+            <div class="contact">
+                <h2>8. Contact Us</h2>
+                <p>If you have any questions about these terms or wish to report objectionable content, please contact
+                    us:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:support@diyetix.com">support@diyetix.com</a></li>
+                    <li><strong>App:</strong> Diyetix - Your Personal Health Coach</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+
+            // Show selected content
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
