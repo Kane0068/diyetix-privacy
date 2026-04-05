@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyetix - Tıbbi Sorumluluk Reddi / Medical Disclaimer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6; color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;
+        }
+        .container {
+            width: 100%; max-width: 800px; background: white; padding: 40px;
+            border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); text-align: left;
+        }
+        .logo {
+            width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;
+            font-size: 2.5em; color: white; font-weight: bold; box-shadow: 0 10px 20px rgba(118, 75, 162, 0.2);
+        }
+        h1 { color: #333; margin-bottom: 20px; font-size: 1.8em; text-align: center; }
+        .text-content { 
+            background: #f8f9fa; padding: 30px; border-radius: 12px; margin-bottom: 30px; 
+            border: 1px solid #e9ecef; font-size: 0.95em; height: 400px; overflow-y: auto;
+        }
+        .text-content h2 { font-size: 1.2em; margin-top: 20px; margin-bottom: 10px; color: #2d3748; }
+        .text-content p { margin-bottom: 15px; color: #4a5568; }
+        .text-content ul { margin-bottom: 15px; padding-left: 20px; color: #4a5568; }
+        .text-content strong { color: #e53e3e; }
+        .btn-back {
+            display: block; width: 200px; margin: 0 auto; padding: 12px 24px; background: #667eea; color: white;
+            text-align: center; text-decoration: none; border-radius: 8px; font-weight: 500; transition: background 0.3s;
+        }
+        .btn-back:hover { background: #5a69d4; }
+        .lang-switch { margin-bottom: 30px; text-align: center; }
+        .lang-btn {
+            display: inline-block; padding: 8px 16px; margin: 0 5px; background: #f0f0f0; color: #666;
+            border-radius: 20px; cursor: pointer; transition: all 0.3s; font-size: 0.9em; font-weight: 500;
+        }
+        .lang-btn.active { background: #667eea; color: white; }
+        .content { display: none; }
+        .content.active { display: block; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">D</div>
+        
+        <div class="lang-switch">
+            <span class="lang-btn active" onclick="switchLang('tr', event)">Türkçe</span>
+            <span class="lang-btn" onclick="switchLang('en', event)">English</span>
+        </div>
+
+        <div id="tr-content" class="content active">
+            <h1>Tıbbi Sorumluluk Reddi (Medical Disclaimer)</h1>
+            <div class="text-content">
+                <h2>1. Diyetix Bir Tıbbi Cihaz / Uygulama Değildir</h2>
+                <p>Diyetix uygulaması içerisinde yer alan, taranan, önerilen veya "Yapay Zeka (AI)" tarafından üretilen hiçbir içerik <strong>tıbbi bir tavsiye, teşhis veya tedavi yöntemi değildir.</strong> Uygulama, beslenme alışkanlıklarınızı takip etmeye yönelik destekleyici bir araçtır.</p>
+                
+                <h2>2. Alerjen ve Sağlık Riskleri</h2>
+                <p>Uygulama üzerinden analiz edilen ürün barkodları, yemek fotoğrafları veya içerik taramalarında yapay zeka; sizin belirtmiş olduğunuz alerjilere yönelik uyarılarda bulunabilir. <strong>Ancak:</strong></p>
+                <ul>
+                    <li>Yapay zeka analizleri %100 doğru olmayabilir.</li>
+                    <li>Ambalaj içeriği üretici tarafından değiştirilmiş ancak sisteme yansımamış olabilir.</li>
+                    <li>Taranan gıdanın içerisindeki çapraz bulaşma riskleri (ör. eser miktarda fındık, gluten) uygulama tarafından tespit edilemeyebilir.</li>
+                </ul>
+                <p><strong>Ciddi bir gıda alerjiniz veya intoleransınız varsa (ör. Çölyak, Fıstık Alerjisi vb.), ürünleri tüketmeden önce mutlaka resmi ambalajındaki etiketleri kendi gözünüzle kontrol etmeli veya doktorunuza danışmalısınız. Diyetix veya geliştiricileri, yanlış analiz kaynaklı oluşabilecek alerjik reaksiyonlar veya sağlık sorunlarından sorumlu tutulamaz.</strong></p>
+
+                <h2>3. Profesyonel Destek Alın</h2>
+                <p>Herhangi bir diyete başlamadan önce, mevcut rahatsızlıklarınız, ilaç kullanımlarınız, gebelik durumunuz veya alerjileriniz varsa lütfen yetkili bir diyetisyene ya da doktorunuza danışınız.</p>
+
+                <h2>4. Kullanıcı Sorumluluğu</h2>
+                <p>Bu uygulamayı kullanarak, sağlığınız ve beslenmenizle ilgili verdiğiniz her türlü final kararın ve tüketim sorumluluğunun tamamen size ait olduğunu; uygulamanın geliştiricilerini veya bağlı yapay zeka servis sağlayıcılarını (Google Gemini vb.) yasal veya tıbbi hiçbir şekilde sorumlu tutmayacağınızı kabul etmiş sayılırsınız.</p>
+            </div>
+            <a href="index.html" class="btn-back">Ana Sayfaya Dön</a>
+        </div>
+
+        <div id="en-content" class="content">
+            <h1>Medical Disclaimer</h1>
+            <div class="text-content">
+                <h2>1. Diyetix is NOT a Medical Application</h2>
+                <p>Any content, analysis, or recommendation provided by the Diyetix app or its "Artificial Intelligence (AI)" features does <strong>NOT constitute medical advice, diagnosis, or treatment.</strong> The application is strictly a supportive tool for monitoring nutritional habits.</p>
+                
+                <h2>2. Allergies and Health Risks</h2>
+                <p>When analyzing barcodes, food photos, or menus, the AI may warn you about ingredients based on your stated allergies. <strong>However:</strong></p>
+                <ul>
+                    <li>AI analysis is not 100% accurate.</li>
+                    <li>Ingredients might be modified by the manufacturer and not reflected in the system.</li>
+                    <li>Cross-contamination risks (e.g., trace amounts of nuts, gluten) cannot always be detected by the app.</li>
+                </ul>
+                <p><strong>If you have a severe food allergy or intolerance (e.g., Celiac disease, Peanut allergy), you MUST always manually check the official packaging labels or consult your physician before consuming any product. Diyetix and its developers cannot be held liable for any allergic reactions or health complications resulting from inaccurate AI analysis.</strong></p>
+
+                <h2>3. Seek Professional Help</h2>
+                <p>Before starting any diet, please consult a certified dietitian or physician, especially if you have pre-existing conditions, use medications, are pregnant, or have allergies.</p>
+
+                <h2>4. User Responsibility</h2>
+                <p>By using this application, you agree that you are solely responsible for your final health and dietary decisions. You acknowledge that you will not hold the application developers or the connected AI service providers (e.g., Google Gemini) legally or medically liable for any outcomes.</p>
+            </div>
+            <a href="index.html" class="btn-back">Return to Home</a>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang, event) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang + '-content').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
